@@ -1,72 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student form</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>Student Enrollment Form</h1>
-    <div class="box">
-        
-        <form action="" id="userform">
-           
-       <div class="container">
-        <fieldset>
-            <legend>Name</legend>
-            <label for="">First-Name <input type="text" name="First-name" placeholder="Enter First-Name" id="name"></label>
-            <label for="">Middle-Name <input type="text" name="Middle-Name" placeholder="Enter Middle-Name"></label><br><br>
-            <label for="">Last-Name <input type="text" name="Last-Name" placeholder="Enter Last-Name"></label><br>
-        </fieldset><br><br>
-
-        <fieldset>
-            <legend>Email</legend>
-            <label for="">E-mail <input type="email" name="email" placeholder="Enter E-mail"></label>
-        </fieldset><br><br>
-
-        <fieldset>
-            <legend>Web-site</legend>
-            <label for="">Website <input type="website" Placeholder="Enter Website" name="website"></label>
-        </fieldset><br><br>
-
-        <fieldset>
-            <legend>Image link</legend>
-            <label for="">Image-Link <input type="website" placeholder="Enter Image link" name="image link"></label>
-        </fieldset><br><br>
-
-        <fieldset>
-            <legend>Gender</legend>
-            <input type="radio" name="radio">Male <br><br>
-            <input type="radio" name="radio">Female <br><br>
-            <input type="radio" name="radio">Other <br>
-        </fieldset><br><br>
-
-        <fieldset>
-            <legend>Skills</legend>
-            <label for=""><input type="checkbox" name="checkbox" id="">HTML</label>
-            <label for=""><input type="checkbox" name="checkbox" id="">CSS</label>
-            <label for=""><input type="checkbox" name="checkbox" id="">JavaScript</label>
-            <label for=""><input type="checkbox" name="checkbox" id="">C</label>
-            <label for=""><input type="checkbox" name="checkbox" id="">C++</label>
-            <label for=""><input type="checkbox" name="checkbox" id="">Python</label>
-            <label for=""><input type="checkbox" name="checkbox" id="">Java</label>
-
-        </fieldset><br>
-
-        <pre class="command">
-            <button type="submit" class="btn">Enroll Student</button>    <button type="reset" class="btn1">Clear</button>
-        </pre>
-
-       </div>
-        </form>
-        
+  <div id="main">
+    <div id="heading">
+      <h3>Student Enrollment Form</h3>
     </div>
-    <div class="smallcontainer">
-        <h1 class="h11">Enrolled Students</h1>
+    <div id="left-box">
+      <form action="" onsubmit="now()">
+        <label for="">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" class="z" />
+
+        <label for="">Email</label>
+        <input type="email" id="email" placeholder="example@mail.com" class="z" />
+
+        <label for="">Website</label>
+        <input type="url" id="url" placeholder="Add link" />
+
+        <label for="">Image link</label>
+        <input type="url" id="url2" placeholder="Add img link" />
+
+        <label for="">Gender</label>
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label id="m" for="">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label id="f" for="">Female</label>
+
+        <label for="">Enrollment <br />
+          Number</label>
+        <input type="text" placeholder="Enrollment No." id="enroll" />
+
+      </form>
+
+      <button id="red">Submit</button>
+      <button id="green">Reset</button>
     </div>
-    
-    <script src="./script.js"></script>
+    <div id="divider"></div>
+    <div id="right-box">
+      <div class="card">
+        <div class="photo">
+           <img src="#" alt="Add Your Image" /> 
+        </div>
+         <p class="para" id="p1">Name: Dhyankumar Patel</p>
+        <p class="para" id="p2">Email: dhyanp92@gmail.com</p>
+        <p class="para" id="p3">Website: www.dhyan.com</p>
+        <p class="para" id="p4">Gender: Male</p>
+        <p class="para" id="p5">Enrollment No. : *******226</p> 
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
